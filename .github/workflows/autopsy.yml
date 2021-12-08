@@ -2,10 +2,14 @@ name: Autopsy
 
 on: [push, pull_request]
 
+env:
+  AUTOPSY_DOCKER_USERNAME: ${{ github.actor }}
+
 jobs:
   autopsy:
     name: Autopsy
     runs-on: ubuntu-latest
     
     steps:
-      - uses: achillesrasquinha/autopsy@develop
+      - name: Performing Autopsy
+        uses: achillesrasquinha/autopsy@develop
