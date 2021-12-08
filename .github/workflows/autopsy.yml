@@ -1,0 +1,11 @@
+name: Autopsy
+
+on: [push, pull_request]
+
+jobs:
+  autopsy:
+    name: Autopsy
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: achillesrasquinha/autopsy@develop
