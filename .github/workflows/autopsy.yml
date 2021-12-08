@@ -6,7 +6,7 @@ env:
   AUTOPSY_DOCKER_USERNAME:  ${{ github.actor }}
   AUTOPSY_DOCKER_PASSWORD:  ${{ github.token }}
 
-  AUTOPSY_APPDIR: $GITHUB_WORKSPACE
+  AUTOPSY_APPDIR: ${{ github.workspace }}
 
   AUTOPSY_DOCKER_IMAGE_TAG: ghcr.io/${{ github.repository }}
 
